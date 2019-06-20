@@ -7,7 +7,7 @@ before_install:
   - docker build -t krishi4u83/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run krishi4u83/react-test -- --coverage
+  - docker run krishi4u83/react-test -- --coverege
 
 after_success:
   - docker build -t krishi4u83/multi-client ./client
